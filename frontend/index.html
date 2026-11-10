@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta name="description" content="Discover interesting finds and shop from sellers across Malawi with Mini-market.">
+  <title>Mini-market — Good finds live here.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topline">
+    <span>GOOD FINDS. GOOD PEOPLE.</span>
+    <span class="topline-right">A marketplace made for Malawi <span class="flag">🇲🇼</span></span>
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="wordmark" aria-label="Mini-market home">
+      <span class="brand-symbol">m<span>.</span></span>
+      <span class="brand-name">mini-market</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#discover">Discover</a>
+      <a class="nav-link" href="#categories">Categories</a>
+      <a class="nav-link" href="#about">Our story</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button" id="cartButton" aria-label="Shopping bag">
+        <span class="bag-icon">▱</span>
+        <span class="cart-label">Bag</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a href="#sell" class="sell-button">Start selling <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a>
+    <a href="#discover">Discover</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">Our story</a>
+    <a href="#sell">Start selling</a>
+  </nav>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE LOCAL MARKETPLACE, REIMAGINED</div>
+        <h1>Good things<br>find <span>new homes.</span></h1>
+        <p class="hero-description">
+          From everyday essentials to unexpected treasures.
+          Discover what people are selling, right here in Malawi.
+        </p>
+
+        <form class="hero-search" id="searchForm">
+          <span class="search-icon">⌕</span>
+          <input id="searchInput" type="search" placeholder="What are you looking for?" aria-label="Search products">
+          <button type="submit">Search <span>↗</span></button>
+        </form>
+
+        <div class="hero-footnote">
+          <span class="live-dot"></span>
+          A little closer to what you need.
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+            alt="A thoughtfully arranged retail space"
+          >
+          <div class="image-caption">
+            <span>THE EVERYDAY EDIT</span>
+            <span>01 / 04</span>
+          </div>
+        </div>
+        <div class="hero-sticker">
+          <span class="sticker-star">✳</span>
+          <span>Find your<br>next favourite.</span>
+        </div>
+        <div class="hero-side-note">LOCAL FINDS · FRESH POSSIBILITIES</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Marketplace highlights">
+      <div class="ticker-track">
+        <span>BUY LOCAL</span><i>✳</i><span>SELL WITH EASE</span><i>✳</i>
+        <span>DISCOVER MORE</span><i>✳</i><span>MADE FOR MALAWI</span><i>✳</i>
+        <span>BUY LOCAL</span><i>✳</i><span>SELL WITH EASE</span><i>✳</i>
+        <span>DISCOVER MORE</span><i>✳</i><span>MADE FOR MALAWI</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="category-section section-wrap" id="categories">
+      <div class="section-heading compact-heading">
+        <div>
+          <div class="eyebrow">A WORLD OF GOOD FINDS</div>
+          <h2>Where do you want to look?</h2>
+        </div>
+        <a href="#discover" class="text-link">Explore everything <span>↗</span></a>
+      </div>
+
+      <div class="category-list" id="categoryList">
+        <button class="category-chip active" data-category="All">All finds <span>↗</span></button>
+        <button class="category-chip" data-category="Electronics">Electronics <span>↗</span></button>
+        <button class="category-chip" data-category="Phones">Phones <span>↗</span></button>
+        <button class="category-chip" data-category="Fashion">Fashion <span>↗</span></button>
+        <button class="category-chip" data-category="Furniture">Home & living <span>↗</span></button>
+        <button class="category-chip" data-category="Vehicles">Vehicles <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="discover-section section-wrap" id="discover">
+      <div class="section-heading discover-heading">
+        <div>
+          <div class="eyebrow">THE MARKETPLACE SELECTION</div>
+          <h2>Worth a closer look<span class="blue-period">.</span></h2>
+          <p class="section-subtitle">A selection of things you might just love.</p>
+        </div>
+        <div class="sort-wrap">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect">
+            <option value="featured">Featured</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+            <option value="newest">Newest first</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="results-line">
+        <span id="resultCount">A few good finds</span>
+        <span>MK · MALAWI KWACHA</span>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌕</span>
+        <h3>Nothing here just yet.</h3>
+        <p>Try another search or explore a different category.</p>
+        <button id="clearFilters">Show all finds</button>
+      </div>
+    </section>
+
+    <section class="local-story section-wrap" id="about">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=85" alt="People exploring a clothing shop">
+        <span class="story-image-tag">A MARKET WITH MANY STORIES</span>
+      </div>
+      <div class="story-copy">
+        <div class="eyebrow">MORE THAN JUST SHOPPING</div>
+        <h2>Every good find has a story.</h2>
+        <p>
+          Mini-market brings buyers and sellers closer together.
+          Find useful things, give pre-loved items another life,
+          and discover what your community has to offer.
+        </p>
+        <a href="#discover" class="dark-link">Explore the marketplace <span>↗</span></a>
+        <div class="story-mark">MM<span>.</span></div>
+      </div>
+    </section>
+
+    <section class="sell-section section-wrap" id="sell">
+      <div class="sell-copy">
+        <div class="eyebrow light-eyebrow">HAVE SOMETHING TO SELL?</div>
+        <h2>Your next buyer<br>could be closer<br>than you think.</h2>
+        <p>Give your items a place to be discovered. Your next sale starts here.</p>
+        <a href="#sell" class="sell-cta">Become a seller <span>↗</span></a>
+      </div>
+      <div class="sell-art">
+        <div class="sell-circle circle-one"></div>
+        <div class="sell-circle circle-two"></div>
+        <div class="sell-note">
+          <span>YOUR THINGS.</span>
+          <strong>Someone's<br>new favourite.</strong>
+          <span class="note-arrow">↗</span>
+        </div>
+        <span class="sell-decoration">SELL SOMETHING GOOD</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="wordmark footer-wordmark">
+          <span class="brand-symbol">m<span>.</span></span>
+          <span class="brand-name">mini-market</span>
+        </a>
+        <p>Good finds. Good people.<br>A marketplace made for Malawi.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Discover</h3>
+        <a href="#discover">All finds</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">Our story</a>
+      </div>
+      <div class="footer-column">
+        <h3>Marketplace</h3>
+        <a href="#sell">Start selling</a>
+        <a href="#discover">Explore items</a>
+        <a href="#sell">Contact</a>
+      </div>
+      <div class="footer-note">
+        <span>BUILT AROUND THE GOOD STUFF.</span>
+        <strong>Malawi <span>🇲🇼</span></strong>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Mini-market. All rights reserved.</span>
+      <span>MADE FOR THE WAY WE SHOP.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
