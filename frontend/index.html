@@ -53,12 +53,8 @@
     </nav>
 
     <div class="header-actions">
-      <button class="icon-button" id="cartButton" aria-label="Shopping bag">
-        <span class="bag-icon">▱</span>
-        <span class="cart-label">Bag</span>
-        <span class="cart-count" id="cartCount">0</span>
-      </button>
-      <a href="#sell" class="sell-button">Start selling <span>↗</span></a>
+      <a href="login.html" class="account-link">Log in</a>
+      <a href="register.html" class="sell-button">Create account <span>↗</span></a>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
     </div>
   </header>
@@ -68,7 +64,8 @@
     <a href="#discover">Discover</a>
     <a href="#categories">Categories</a>
     <a href="#about">Our story</a>
-    <a href="#sell">Start selling</a>
+    <a href="login.html">Log in</a>
+    <a href="register.html">Create an account</a>
   </nav>
 
   <main>
@@ -131,12 +128,7 @@
       </div>
 
       <div class="category-list" id="categoryList">
-        <button class="category-chip active" data-category="All">All finds <span>↗</span></button>
-        <button class="category-chip" data-category="Electronics">Electronics <span>↗</span></button>
-        <button class="category-chip" data-category="Phones">Phones <span>↗</span></button>
-        <button class="category-chip" data-category="Fashion">Fashion <span>↗</span></button>
-        <button class="category-chip" data-category="Furniture">Home & living <span>↗</span></button>
-        <button class="category-chip" data-category="Vehicles">Vehicles <span>↗</span></button>
+        <p class="backend-placeholder">Marketplace categories will appear here.</p>
       </div>
     </section>
 
@@ -145,7 +137,7 @@
         <div>
           <div class="eyebrow">THE MARKETPLACE SELECTION</div>
           <h2>Worth a closer look<span class="blue-period">.</span></h2>
-          <p class="section-subtitle">A selection of things you might just love.</p>
+          <p class="section-subtitle">Discover products listed by real sellers across Malawi.</p>
         </div>
         <div class="sort-wrap">
           <label for="sortSelect">Sort by</label>
@@ -163,12 +155,12 @@
         <span>MK · MALAWI KWACHA</span>
       </div>
 
-      <div class="product-grid" id="productGrid"></div>
-      <div class="empty-state" id="emptyState" hidden>
-        <span>⌕</span>
-        <h3>Nothing here just yet.</h3>
-        <p>Try another search or explore a different category.</p>
-        <button id="clearFilters">Show all finds</button>
+      <div class="product-grid" id="productGrid" hidden></div>
+      <div class="empty-state marketplace-empty" id="emptyState">
+        <span>✳</span>
+        <h3>The marketplace is getting ready.</h3>
+        <p>Real products from real sellers will appear here. Create an account and get ready to discover something good.</p>
+        <a href="register.html" class="empty-cta">Join Mini-market ↗</a>
       </div>
     </section>
 

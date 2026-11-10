@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create your Mini-market account.">
+  <meta name="theme-color" content="#f5f7fc">
+  <title>Create account | Mini-market</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-page">
+  <header class="auth-topbar">
+    <a href="index.html" class="auth-brand">
+      <span class="auth-brand-symbol">m<span>.</span></span>
+      mini-market
+    </a>
+    <a href="index.html" class="auth-back">← Back to marketplace</a>
+  </header>
+
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <span class="auth-eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+      <h1>Find good things. <span>Meet good people.</span></h1>
+      <p>Create your account and become part of a marketplace built around Malawi.</p>
+      <div class="auth-points">
+        <div class="auth-point"><span class="auth-check">✓</span> Shop from local sellers.</div>
+        <div class="auth-point"><span class="auth-check">✓</span> Save products for later.</div>
+        <div class="auth-point"><span class="auth-check">✓</span> Start selling when you're ready.</div>
+      </div>
+    </section>
+
+    <section class="auth-card">
+      <h2>Create account</h2>
+      <p class="auth-card-subtitle">A few details and you're on your way.</p>
+
+      <form class="auth-form" data-auth-form="register">
+        <div class="auth-field">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Your full name" autocomplete="name" minlength="2" maxlength="80" required>
+        </div>
+
+        <div class="auth-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+
+        <div class="auth-field">
+          <label for="password">Password</label>
+          <div class="auth-password-wrap">
+            <input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+            <button type="button" class="auth-password-toggle" data-password-toggle="password">Show</button>
+          </div>
+        </div>
+
+        <div class="auth-field">
+          <label for="confirmPassword">Confirm password</label>
+          <div class="auth-password-wrap">
+            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Enter password again" autocomplete="new-password" minlength="8" required>
+            <button type="button" class="auth-password-toggle" data-password-toggle="confirmPassword">Show</button>
+          </div>
+        </div>
+
+        <div class="auth-message" role="status" aria-live="polite"></div>
+        <button class="auth-submit" type="submit">Create my account ↗</button>
+      </form>
+
+      <p class="auth-terms">By creating an account, you agree to our terms and privacy policy. These will be published before launch.</p>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <footer class="auth-footer">© <span id="year"></span> Mini-market · Made for Malawi 🇲🇼</footer>
+  <script src="js/auth.js"></script>
+</body>
+</html>

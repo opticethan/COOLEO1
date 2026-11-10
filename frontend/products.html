@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f9fc">
+  <meta name="description" content="Explore products and discover local sellers across Malawi on Mini-market.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mini-market">
+  <meta property="og:title" content="Explore products | Mini-market">
+  <meta property="og:description" content="Discover great finds from local sellers across Malawi.">
+  <title>Explore products | Mini-market</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+
+  <div class="topline">
+    <span>GOOD FINDS. GOOD PEOPLE.</span>
+    <span class="topline-right">A marketplace made for Malawi <span class="flag">🇲🇼</span></span>
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark" aria-label="Mini-market home">
+      <span class="brand-symbol">m<span>.</span></span>
+      <span class="brand-name">mini-market</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="products.html">Discover</a>
+      <a class="nav-link" href="categories.html">Categories</a>
+      <a class="nav-link" href="index.html#about">Our story</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="login.html" class="account-link">Log in</a>
+      <a href="register.html" class="sell-button">Create account <span>↗</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="products.html">Discover</a>
+    <a href="categories.html">Categories</a>
+    <a href="index.html#about">Our story</a>
+    <a href="login.html">Log in</a>
+    <a href="register.html">Create an account</a>
+  </nav>
+
+  <main class="products-page">
+
+    <section class="products-hero">
+      <div class="products-hero-inner">
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          THE MINI-MARKET COLLECTION
+        </div>
+
+        <h1>Find something<br><span>worth keeping.</span></h1>
+
+        <p>
+          Explore the marketplace and discover what local sellers
+          across Malawi have to offer.
+        </p>
+
+        <div class="products-breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Discover products</span>
+        </div>
+      </div>
+
+      <div class="products-hero-side">
+        <span class="hero-side-number">01</span>
+        <span class="hero-side-line"></span>
+        <span>DISCOVER LOCAL</span>
+      </div>
+    </section>
+
+    <section class="products-content section-wrap">
+
+      <div class="products-heading">
+        <div>
+          <div class="eyebrow">YOUR NEXT GOOD FIND</div>
+          <h2>Explore products<span>.</span></h2>
+          <p>Browse items listed by sellers across Malawi.</p>
+        </div>
+
+        <div class="products-currency">
+          <span class="currency-dot"></span>
+          PRICES IN MWK
+        </div>
+      </div>
+
+      <div class="marketplace-toolbar">
+
+        <form class="products-search" id="productsSearchForm">
+          <span class="search-icon">⌕</span>
+          <input
+            type="search"
+            id="productsSearch"
+            name="q"
+            placeholder="Search products..."
+            aria-label="Search products"
+          >
+          <button type="submit">Search <span>↗</span></button>
+        </form>
+
+        <div class="products-controls">
+          <div class="filter-control">
+            <label for="categoryFilter">Category</label>
+            <select id="categoryFilter">
+              <option value="">All categories</option>
+            </select>
+          </div>
+
+          <div class="filter-control">
+            <label for="sortProducts">Sort by</label>
+            <select id="sortProducts">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest first</option>
+              <option value="low">Price: low to high</option>
+              <option value="high">Price: high to low</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="marketplace-results">
+        <div>
+          <span class="results-label">MARKETPLACE RESULTS</span>
+          <p id="productsResultCount">Waiting for marketplace listings</p>
+        </div>
+
+        <a href="categories.html" class="browse-categories">
+          Browse categories <span>↗</span>
+        </a>
+      </div>
+
+      <div class="products-empty-state" id="productsEmptyState">
+        <div class="empty-icon">✳</div>
+        <span class="empty-eyebrow">A FRESH MARKETPLACE</span>
+        <h3>Good finds are coming.</h3>
+        <p>
+          There aren't any published products to display yet.
+          Once sellers start listing their items, you'll discover
+          them here.
+        </p>
+
+        <div class="empty-actions">
+          <a href="register.html" class="empty-primary">Join Mini-market <span>↗</span></a>
+          <a href="index.html" class="empty-secondary">Back to homepage</a>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid" hidden></div>
+
+    </section>
+
+    <section class="products-seller section-wrap">
+      <div>
+        <span>HAVE SOMETHING TO SELL?</span>
+        <h2>Your next customer<br>could be right here.</h2>
+        <p>Join the marketplace and prepare to reach buyers across Malawi.</p>
+      </div>
+
+      <a href="register.html?mode=seller">
+        Start selling <span>↗</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <a href="index.html" class="wordmark footer-wordmark">
+          <span class="brand-symbol">m<span>.</span></span>
+          <span class="brand-name">mini-market</span>
+        </a>
+        <p>
+          Good finds. Good people.<br>
+          A marketplace made for Malawi.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Marketplace</h3>
+        <a href="products.html">Explore products</a>
+        <a href="categories.html">Categories</a>
+        <a href="index.html#about">Our story</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Your account</h3>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Create account</a>
+        <a href="forgot-password.html">Reset password</a>
+      </div>
+
+      <div class="footer-note">
+        <span>BUILT FOR LOCAL DISCOVERY</span>
+        <strong>Made for Malawi 🇲🇼</strong>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="productsYear"></span> Mini-market. All rights reserved.</span>
+      <span>GOOD FINDS. GOOD PEOPLE.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="productsToast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+</body>
+</html>
