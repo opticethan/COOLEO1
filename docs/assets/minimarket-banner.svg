@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071b36"/>
+      <stop offset="100%" stop-color="#1265b5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#55b8ff"/>
+      <stop offset="100%" stop-color="#9bdcff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <circle cx="1050" cy="70" r="180" fill="#ffffff" opacity=".045"/>
+  <circle cx="1120" cy="360" r="230" fill="#ffffff" opacity=".035"/>
+  <path d="M0 350 Q300 250 600 370 T1200 300 V420 H0Z" fill="#ffffff" opacity=".035"/>
+  <g transform="translate(95 108)">
+    <rect x="0" y="0" width="94" height="94" rx="24" fill="#ffffff"/>
+    <path d="M22 42h50l-5 37H27z" fill="#1265b5"/>
+    <path d="M34 43c0-26 26-26 26 0" fill="none" stroke="#1265b5" stroke-width="7" stroke-linecap="round"/>
+    <path d="M39 60h23" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="220" y="170" fill="#ffffff" font-family="Arial,sans-serif" font-size="76" font-weight="800">Mini-market</text>
+  <text x="222" y="220" fill="url(#accent)" font-family="Arial,sans-serif" font-size="25" letter-spacing="3">YOUR MARKETPLACE. YOUR COMMUNITY.</text>
+  <text x="100" y="295" fill="#ffffff" font-family="Arial,sans-serif" font-size="25">Discover • Buy • Sell</text>
+  <text x="100" y="337" fill="#c8ddf2" font-family="Arial,sans-serif" font-size="20">Made for Malawi 🇲🇼</text>
+  <text x="1090" y="380" fill="#c8ddf2" font-family="Arial,sans-serif" font-size="15" text-anchor="end">A collaborative marketplace project</text>
+</svg>
